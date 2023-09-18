@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="interface.css">
+ 
+</head>
+
+<body>
+  <center> <header>
+    <h1>PHOTO EDITING INTERFACE</h1>
+
+   </header></center>
+   
+   <div class="container">
+
+<div class="imgcontainer" style="
+box-shadow: 0 2px 5px  black;">
+
+    <img id="pic"  src="images/default image.jpg" alt="">
+    <br>
+   <center>
+    <input type="file" accept="images/*"   class="file-input" hidden> 
+
+    <button type="button" class="choose">upload  <i class="fa-solid fa-upload"></i></button>
+<button type="button" class="download">download  <i class="fa-solid fa-download"></i></button>
+</center>
+
+</div>
+<center>
+<div class="tools" style="box-shadow: 0 2px 5px  black;">
+<div class="icons">
+    <label for="title" style="margin-left: 5px;">Tools</label> <br> 
+    <button class="ibtn" id="rotate">   <i class="fa-solid fa-rotate-left"></i></button>  
+        <button class="ibtn" id="crop">  <i class="fa-solid fa-crop-simple"></i></button>  
+            
+                <!-- <button>  <i class="fa-solid fa-image"></i></button>   -->
+                    <!-- <button>  <i class="fa-solid fa-download"></i></button>  
+                        <button>  <i class="fa-solid fa-upload"></i></button>   -->
+                            <button  class="ibtn">  <i class="fa-regular fa-sun"></i></button>  
+   <button class="ibtn"> <i class="fa-solid fa-font"></i></button>  
+  
+<br>
+    
+</div>
+<div class="filtertool">
+    <label for="title" style="margin-left: 5px;">Filters</label> <br>    
+   <button  id="Brightness" class="active">Brightness</button>
+   <button id="Saturation">Saturation</button>
+   <br>
+   <button id="Inversion" >Inversion</button>
+   <button id="Contrast" >Contrast</button>
+</div>
+<div class="slider">
+            <span class="name" style="margin:5px;">Brightness</span>
+            <span class="value" style="margin: 5px;">100%</span>
+       
+     <br>
+        <input id="slider"  type="range" name="" id="" max="200" min="0">
+        <br>
+    </div>
+    <button id="reset"class="helping">Reset All  <i class="fa-solid fa-rotate"></i></button>
+</div>
+
+</center>
+</div>
+</body>
+<script src="interface.js"></script>
+
+</html>

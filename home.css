@@ -1,0 +1,208 @@
+html, body {
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+  }
+  .arrow {
+    border: solid rgb(253, 253, 253);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  .enter{
+    height: 50px;
+    width: 150px ;
+      background: #5E5DF0;
+      border-radius: 999px;
+      box-shadow: #5E5DF0 0 10px 20px -10px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+      padding: 8px 18px;
+      width: fit-content;
+      word-break: break-word;
+      border: 0;
+      margin-top: 10px;
+  }
+  .text{
+    /* border-width:2px;
+border-style:solid; */
+/* border-color:black; */
+height: fit-content;
+width: fit-content;
+margin-left: 150px;
+padding-top: 120px;
+font-family: "Source Sans Pro", "Arial", sans-serif;
+  }
+  h1{
+    font-weight: bolder;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+  }
+  h4{
+    font-weight: bolder;
+    margin-left: 150px;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+  }
+  h6{
+    font-weight:600;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+  }
+   
+  .fe0{
+    border-radius: 8%;
+    margin-top: 10px;
+    margin-left: 70px;
+    height: 80.5px;
+    width: 204px;
+    box-shadow: 0 2px 3px  black;
+  float: left;
+  background: linear-gradient(86deg, #ffffff,rgb(185, 212, 212));
+  
+  }
+  
+  .fe1{
+    border-radius: 8%;
+    margin-top: 10px;
+    margin-left: 70px;
+    height: 80.5px;
+    width: 204px;
+    box-shadow: 0 2px 3px  black;
+  float: left;
+   background: linear-gradient(86deg, #ffffff,rgb(185, 212, 212));
+  
+  }
+  
+  .fe2{
+    border-radius: 8%;
+    margin-top: 10px;
+    margin-left: 70px;
+    height: 80.5px;
+    width: 204px;
+    box-shadow: 0 2px 3px  black;
+  float: left;
+   background: linear-gradient(86deg, #ffffff,rgb(185, 212, 212));
+  
+  }
+  .sc :hover{
+text-decoration: none;
+  }
+
+  .fe3{
+    border-radius: 8%;
+    margin-top: 10px;
+    margin-left: 70px;
+    height: 80.5px;
+    width: 204px;
+    box-shadow: 0 2px 3px  black;
+  float: left;
+   background: linear-gradient(86deg, #ffffff,rgb(185, 212, 212));
+  
+  }
+  .fe0:hover{
+    border-radius: 15%;
+    background: linear-gradient(286deg,rgb(170,76,252),rgb(252,76,208) );
+  }
+ 
+
+.fe1:hover{
+  border-radius: 15%;
+background: linear-gradient(90deg, rgba(253,194,29,1) 0%, rgba(252,118,69,1) 64%);
+}
+.fe2:hover{
+  border-radius: 15%;
+background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); 
+}
+.fe3:hover{
+  border-radius: 15%;
+  background: linear-gradient(278deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);}
+
+
+
+a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    
+  }
+  
+  a:hover{
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    fill: #FFFFFF;
+    
+  }
+  
+ 
+  .dlink{
+    
+    height: 80.5px;
+    width: 204px;
+    cursor: pointer;
+  }
+  /* 286 deg,rgb(170,76,252),rgb(252,76,208) */
+
+  .navbar {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .navbar li {
+    margin: 0 1rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    
+  }
+  div.main {
+    /* border-width:2px;
+border-style:solid;
+border-color:black; */
+    margin: 0;
+    padding: 0;
+    height: 670px;
+    width: 100%;
+      background: linear-gradient(-45deg,#129bdf,#a19ad3,#8BE8E5);
+      background-size: 400% 400%;
+      animation: gradient 10s ease-out infinite;
+  }
+ .parts{
+  height: 500px;
+  width: 100%;
+ background: linear-gradient(45deg,#cad0ff,#e3e3e3);
+ animation: gradient 5s ease-out infinite;
+ }
+
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }

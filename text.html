@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Editor</title>
+<style>
+  #editor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  canvas {
+    border: 1px solid #ccc;
+  }
+</style>
+</head>
+<body>
+<div id="editor-container">
+  <canvas id="editor"></canvas>
+  <div>
+    <label for="text">Add Text:</label>
+    <input type="text" id="text" placeholder="Enter text">
+    <button id="addTextBtn">Add Text</button>
+    <button id="upper">upper</button>
+    <button id="lower">lower</button>
+  </div>
+</div>
+
+<script>
+const canvas = document.getElementById('editor');
+const context = canvas.getContext('2d');
+const textInput = document.getElementById('text');
+const addTextBtn = document.getElementById('addTextBtn');
+const upper=document.querySelector("#upper");
+const lower=document.querySelector("#lower")
+
+const image = new Image();
+image.src = 'default image.jpg';
+let imgpos=20;
+image.onload = () => {
+  canvas.width = image.width;
+  canvas.height = image.height;
+  context.drawImage(image, 0, 0);
+};
+upper.addEventListener("click",()=>{
+imgpos += 10;
+addTextBtn.click();
+
+})
+lower.addEventListener("click",()=>{
+imgpos -= 10;
+addTextBtn.click();
+
+})
+document.addEventListener("keypress",(event)=>{
+if(event.key==' '){
+  imgpos += 10;
+  addTextBtn.click();
+}
+
+})
+addTextBtn.addEventListener('click', () => {
+  const text = textInput.value;
+  const fontSize = 24;
+  const textColor = 'black';
+  const x = canvas.width / 2;
+  const y = canvas.height - imgpos;
+
+  // Clear canvas and redraw image
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.drawImage(image, 0, 0);
+
+  // Add text
+  context.font = `${fontSize}px Arial`;
+  context.fillStyle = textColor;
+  context.textAlign = 'center';
+  context.fillText(text, x, y);
+//   const link =document.createElement("a");
+// link.download = "image.jpg";
+// link.href =canvas.toDataURL();
+// link.click();
+});
+</script>
+</body>
+</html>
+
