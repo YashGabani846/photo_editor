@@ -85,10 +85,11 @@ const canvas=document.createElement("canvas");
 const ctx=canvas.getContext("2d");
 canvas.width= pic.naturalWidth; 
 canvas.height=pic.naturalHeight;
+
 ctx.filter= `brightness(${bright}%) saturate(${saturation}%) invert(${inversion}%) contrast(${contrast}%)`;
 ctx.translate(canvas.width/2,canvas.height/2);
-if(angel!==0){
-    ctx.rotate(rotate * Math.PI /180);
+if(angel!=0){
+    ctx.rotate(angel * Math.PI /180);
 
 }
 ctx.drawImage(pic,-canvas.width/2,-canvas.height/2,canvas.width,canvas.height);
